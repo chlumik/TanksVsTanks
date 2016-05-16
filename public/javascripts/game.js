@@ -49,21 +49,23 @@ var GameState = {
 
     create: function () {
          // Set socket io
-        socket = io();
+
+        //socket = io();
+        socket = io('http://localhost:3000');
 
         game.physics.startSystem(Phaser.Physics.ARCADE);
         // sestavení mapy z dlaždic
         map = game.add.tilemap('map');
         map.addTilesetImage('tiles', 'tiles');
-        https://github.com/chlumik/tanksVStanks
+
         layer[0] = map.createLayer('travnik a jezero');
         layer[0].resizeWorld();
         layer[1] = map.createLayer('baraky prizemi');
-        layer[1].debug = true;
+        //layer[1].debug = true;
         map.setCollisionBetween(1, 1000, true, layer[1]);
         layer[1].resizeWorld();
         layer[2] = map.createLayer('baraky');//nazvy vrstem odpovidaji nazvum v mapa_tanky.json
-        layer[2].debug = true;
+        //layer[2].debug = true;
         layer[2].enableBody = true;
         map.setCollisionBetween(1, 1000, true, layer[2]);
         layer[2].resizeWorld();
