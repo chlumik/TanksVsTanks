@@ -50,8 +50,8 @@ var GameState = {
     create: function () {
          // Set socket io
 
-        //socket = io();
-        socket = io('http://localhost:3000');
+        socket = io();
+        //socket = io('http://localhost:3000');
 
         game.physics.startSystem(Phaser.Physics.ARCADE);
         // sestavení mapy z dlaždic
