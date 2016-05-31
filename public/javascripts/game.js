@@ -213,7 +213,7 @@ var cursors;
 var layer = [];
 var statusText = "";
 var playAgainButton;
-var health = 1;
+var health = 6;
 
 
 game.state.add('GameState', GameState);
