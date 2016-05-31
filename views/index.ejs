@@ -3,18 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-    <title>Tanks vs Tanks</title>
-      <script src="/socket.io/socket.io.js"></script>
-    <script type="text/javascript" src="javascripts/phaser.js"></script>
+    <title><%= title %></title>
     <style>
-      body {
-        padding: 0px;
-        margin: 0px;
-        background: white;
+      header {
+        font-size: 50px;
+      }
+      section h1{
+        font-size: 30px;
+      }
+      body{
+        text-align: center;
+        background-color: green;
+      }
+      p{
+        font-size: 20px;
+      }
+      button {
+        background-color: #f44336; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
       }
     </style>
   </head>
   <body>
-  <script src="javascripts/game.js"></script>
+<header>Vítejte ve hře Tanks vs Tanks</header>
+  <section><h1>Hra je pro 2 a více hráčů</h1></section>
+  <section><h2>Ovládání:</h2>
+  <p>Pomocí šipek a myši<br/>
+    <a href="/game"><button>Vstupte</button></a></p>
+    <img src="/images/assets/mapa.png">
+  </section>
   </body>
+
 </html>
